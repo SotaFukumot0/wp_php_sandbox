@@ -1,0 +1,311 @@
+/*
+ * フォント登録例
+ *
+ * 実際に使用するフォントを配置したら、
+ * 下記の @font-face を追加してください。
+ *
+ * @font-face {
+ *     font-family: 'Rubytext Font 1';
+ *     src: url('./fonts/font1.woff2') format('woff2');
+ *     font-display: swap;
+ * }
+ */
+
+
+/*
+ * Rubytext
+ */
+.rubytext {
+    width: 100%;
+    max-width: 430px;
+    box-sizing: border-box;
+    padding: 20px 28px;
+    border: 1px solid #222;
+    background: #fff;
+}
+
+
+/*
+ * Form
+ */
+.rubytext form {
+    margin: 0;
+}
+
+.rubytext-input-group {
+    margin-bottom: 27px;
+}
+
+.rubytext-input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/*
+ * input area
+ */
+.rubytext-input {
+    width: 251px;
+    height: 31px;
+    box-sizing: border-box;
+    padding: 4px 7px;
+}
+
+.rubytext-start {
+    width: 82px;
+    height: 31px;
+    box-sizing: border-box;
+    padding: 4px 5px;
+}
+
+
+/*
+ * Advance TextArea
+ */
+.rubytext-textarea {
+    width: 100%;
+    min-height: 180px;
+    box-sizing: border-box;
+    padding: 7px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+
+/*
+ * 変換ボタン
+ *
+ * WordPressテーマのカラー設定を使用。
+ *
+ * --wp--preset--color--contrast
+ *     背景色・枠線
+ *
+ * --wp--preset--color--base
+ *     文字色
+ */
+.rubytext-submit,
+.rubytext-copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background-color: var(
+        --wp--preset--color--contrast,
+        #000000
+    );
+
+    color: var(
+        --wp--preset--color--base,
+        #ffffff
+    );
+
+    border: 1px solid var(
+        --wp--preset--color--contrast,
+        #000000
+    );
+
+    padding: 0;
+    margin: 0;
+
+    line-height: 1;
+    white-space: nowrap;
+
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+
+    cursor: pointer;
+}
+
+
+
+
+/*
+ * button
+ */
+.rubytext-submit:hover,
+.rubytext-copy:hover {
+    opacity: 0.85;
+}
+
+
+/*
+ * button_convert
+ */
+.rubytext-submit-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+    margin-bottom: 18px;
+}
+
+.rubytext-submit {
+    width: 90px;
+    height: 42px;
+    border-radius: 9px;
+}
+
+
+
+/*
+ * result
+ */
+.rubytext-result-area {
+    margin-top: 0;
+    padding-top: 26px;
+    border-top: 1px solid #222;
+}
+
+.rubytext-result-title {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.rubytext-result-row {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin-bottom: 12px;
+}
+
+.rubytext-result {
+    width: 271px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 4px 7px;
+    font-size: 20px;
+}
+
+
+/*
+ * copy
+ */
+.rubytext-copy {
+    width: 110px;
+    height: 31px;
+    border-radius: 6px;
+}
+
+
+/*
+ * fonts
+ */
+.rubytext-font-title {
+    margin: 0 0 7px;
+    font-size: 14px;
+}
+
+.rubytext-font-options {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.rubytext-font-options label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+
+/*
+ * log
+ */
+.rubytext-log-title {
+    margin: 0 0 6px;
+    font-size: 14px;
+}
+
+.rubytext-log {
+    width: 100%;
+    height: 122px;
+    box-sizing: border-box;
+    padding: 6px;
+    resize: vertical;
+    font-size: 8px;
+}
+/*
+ * tab
+ */
+/*
+ * Front Tabs
+ */
+.rubytext-front {
+    width: 100%;
+    max-width: 430px;
+}
+
+.rubytext-front-tabs {
+    display: flex;
+    width: 100%;
+}
+
+.rubytext-front-tab {
+    box-sizing: border-box;
+
+    padding: 8px 16px;
+
+    background: var(
+        --wp--preset--color--base,
+        #ffffff
+    );
+
+    color: var(
+        --wp--preset--color--contrast,
+        #000000
+    );
+
+    border: 1px solid var(
+        --wp--preset--color--contrast,
+        #000000
+    );
+
+    cursor: pointer;
+}
+
+.rubytext-front-tab.is-active {
+    background: var(
+        --wp--preset--color--contrast,
+        #000000
+    );
+
+    color: var(
+        --wp--preset--color--base,
+        #ffffff
+    );
+}
+
+.rubytext-front-panel {
+    width: 100%;
+}
+
+.rubytext-front-panel[hidden] {
+    display: none;
+}
+
+/*
+ * フォント設定
+ *
+ * @font-face を登録した場合は、
+ * 各クラスの font-family を変更してください。
+ */
+.rubytext-result-font1 {
+    font-family: sans-serif;
+}
+
+.rubytext-result-font2 {
+    font-family: serif;
+}
+
+.rubytext-result-font3 {
+    font-family: monospace;
+}

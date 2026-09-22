@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/7.1" created="2026-09-01 13:29" -->
+	<!-- generator="WordPress/7.1.1" created="2026-09-22 00:24" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>My WordPress</title>
 	<link>https://my.wordpress.net/scope:default</link>
 	<description></description>
-	<pubDate>Tue, 01 Sep 2026 13:29:59 +0000</pubDate>
+	<pubDate>Tue, 22 Sep 2026 00:24:08 +0000</pubDate>
 	<language>ja</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://my.wordpress.net/scope:default</wp:base_site_url>
@@ -51,6 +51,13 @@
 		<wp:term_name><![CDATA[after_paragraph]]></wp:term_name>
 	</wp:term>
 		<wp:term>
+		<wp:term_id>12</wp:term_id>
+		<wp:term_taxonomy><![CDATA[wp_theme]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[astra]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[astra]]></wp:term_name>
+	</wp:term>
+		<wp:term>
 		<wp:term_id>10</wp:term_id>
 		<wp:term_taxonomy><![CDATA[wpcode_tags]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[comments]]></wp:term_slug>
@@ -70,6 +77,13 @@
 		<wp:term_slug><![CDATA[everywhere]]></wp:term_slug>
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[everywhere]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>11</wp:term_id>
+		<wp:term_taxonomy><![CDATA[wp_theme]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[hello-wp-child]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[hello-wp-child]]></wp:term_name>
 	</wp:term>
 		<wp:term>
 		<wp:term_id>6</wp:term_id>
@@ -99,8 +113,22 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[text]]></wp:term_name>
 	</wp:term>
+		<wp:term>
+		<wp:term_id>2</wp:term_id>
+		<wp:term_taxonomy><![CDATA[wp_theme]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[twentytwentyfive]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[twentytwentyfive]]></wp:term_name>
+	</wp:term>
+		<wp:term>
+		<wp:term_id>1</wp:term_id>
+		<wp:term_taxonomy><![CDATA[category]]></wp:term_taxonomy>
+		<wp:term_slug><![CDATA[uncategorized]]></wp:term_slug>
+		<wp:term_parent><![CDATA[]]></wp:term_parent>
+		<wp:term_name><![CDATA[Uncategorized]]></wp:term_name>
+	</wp:term>
 		
-	<generator>https://wordpress.org/?v=7.1</generator>
+	<generator>https://wordpress.org/?v=7.1.1</generator>
 
 		<item>
 		<title><![CDATA[Welcome to Your WordPress]]></title>
@@ -574,6 +602,259 @@ Commenter avatars come from <a href="https://gravatar.com/">Gravatar</a>.]]></wp
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 														</item>
+					<item>
+		<title><![CDATA[wp_php_sandbox]]></title>
+		<link>https://my.wordpress.net/scope:default/2026/09/22/wp_php_sandbox/</link>
+		<pubDate>Tue, 22 Sep 2026 00:12:50 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://my.wordpress.net/scope:default/?p=12</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:heading {"style":{"typography":{"textAlign":"center"}}} -->
+<h2 class="wp-block-heading has-text-align-center">英ルビっぽいのふったー</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator {"align":"full","className":"is-style-wide"} -->
+<hr class="wp-block-separator alignfull has-alpha-channel-opacity is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p>半角英数字の結合文字を任意の文字列に付与できます。<br>最終的な見た目は表示するサイト等でご確認ください。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:details {"fontSize":"small"} -->
+<details class="wp-block-details has-small-font-size"><summary>仕様等詳細はこちら</summary><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>変換できない場合はログ欄にエラー内容が表示されます</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Unicode 18.0時点で下記に該当する文字を変換します<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>英字：COMBINING LATIN SMALL LETTER x</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>数字：SUPERSCRIPT x</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>j / q / y は上記に無いため変換不可です<br><br></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></details>
+<!-- /wp:details -->
+
+<!-- wp:shortcode -->
+[rubytext]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"textColor":"cyan-bluish-gray","fontSize":"small"} -->
+<p class="has-cyan-bluish-gray-color has-text-color has-link-color has-small-font-size">本ページはWorpressとphpの学習にあたって作成したものです。<br>大半はphpで記述していますがSimplyStaticでjs化してるのでローカルで変換されます。<br>不具合ご意見等はPortfolioのContactからご連絡いただけると幸いです。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>12</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-22 00:12:50]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-22 00:12:50]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2026-09-22 00:12:50]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2026-09-22 00:12:50]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp_php_sandbox]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[site-sidebar-layout]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[site-content-layout]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-site-content-layout]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[site-content-style]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[site-sidebar-style]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-global-header-display]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-banner-title-visibility]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-main-header-display]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-hfb-above-header-display]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-hfb-below-header-display]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-hfb-mobile-header-display]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[site-post-title]]></wp:meta_key>
+		<wp:meta_value><![CDATA[disabled]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-breadcrumbs-content]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-featured-img]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[footer-sml-layout]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-disable-related-posts]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[theme-transparent-header-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[adv-header-id-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[stick-header-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[header-above-stick-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[header-main-stick-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[header-below-stick-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[astra-migrate-meta-layouts]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-page-background-enabled]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-page-background-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:3:{s:7:"desktop";a:12:{s:16:"background-color";s:25:"var(--ast-global-color-5)";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}s:6:"tablet";a:12:{s:16:"background-color";s:0:"";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}s:6:"mobile";a:12:{s:16:"background-color";s:0:"";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[ast-content-background-meta]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:3:{s:7:"desktop";a:12:{s:16:"background-color";s:25:"var(--ast-global-color-4)";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}s:6:"tablet";a:12:{s:16:"background-color";s:25:"var(--ast-global-color-4)";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}s:6:"mobile";a:12:{s:16:"background-color";s:25:"var(--ast-global-color-4)";s:16:"background-image";s:0:"";s:17:"background-repeat";s:6:"repeat";s:19:"background-position";s:13:"center center";s:15:"background-size";s:4:"auto";s:21:"background-attachment";s:6:"scroll";s:15:"background-type";s:0:"";s:16:"background-media";s:0:"";s:12:"overlay-type";s:0:"";s:13:"overlay-color";s:0:"";s:15:"overlay-opacity";s:0:"";s:16:"overlay-gradient";s:0:"";}}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[footnotes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_pingme]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_encloseme]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+		<wp:meta_value><![CDATA[2026-09-21]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Custom Styles]]></title>
+		<link>https://my.wordpress.net/scope:default/2026/09/05/wp-global-styles-hello-wp-child/</link>
+		<pubDate>Sat, 05 Sep 2026 13:51:29 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://my.wordpress.net/scope:default/2026/09/05/wp-global-styles-hello-wp-child/</guid>
+		<description></description>
+		<content:encoded><![CDATA[{"version": 3, "isGlobalStylesUserThemeJSON": true }]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>17</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-05 13:51:29]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-05 13:51:29]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2026-09-05 13:51:29]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2026-09-05 13:51:29]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp-global-styles-hello-wp-child]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="wp_theme" nicename="hello-wp-child"><![CDATA[hello-wp-child]]></category>
+						</item>
+					<item>
+		<title><![CDATA[Custom Styles]]></title>
+		<link>https://my.wordpress.net/scope:default/2026/09/18/wp-global-styles-astra/</link>
+		<pubDate>Fri, 18 Sep 2026 01:49:11 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">https://my.wordpress.net/scope:default/2026/09/18/wp-global-styles-astra/</guid>
+		<description></description>
+		<content:encoded><![CDATA[{"version": 3, "isGlobalStylesUserThemeJSON": true }]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>29</wp:post_id>
+		<wp:post_date><![CDATA[2026-09-18 01:49:11]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-09-18 01:49:11]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2026-09-18 01:49:11]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2026-09-18 01:49:11]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wp-global-styles-astra]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[wp_global_styles]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+										<category domain="wp_theme" nicename="astra"><![CDATA[astra]]></category>
+						</item>
 				</channel>
 </rss>
 	
